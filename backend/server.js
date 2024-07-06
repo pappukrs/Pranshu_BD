@@ -13,11 +13,11 @@ const corsOptions = {
   origin: '*', 
 
   methods: ['GET',,'PUT','PATCH','POST','DELETE'], 
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
+  
   credential:true
 };
 app.use(cors(corsOptions));
+app.options("",cors(corsOptions))
 app.use(express.json());
 
 const upload = multer({ dest: 'uploads/' });
