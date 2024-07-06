@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "build": "npm install && echo 'Dependencies installed.'"
   },
   "keywords": [],
   "author": "",
